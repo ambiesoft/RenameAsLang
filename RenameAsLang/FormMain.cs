@@ -43,7 +43,7 @@ namespace RenameAsLang
             DirectoryInfo di = new DirectoryInfo(txtFolder.Text);
 
             Dictionary<char, string> charmap = new Dictionary<char, string>();
-            FileInfo[] fis = di.GetFiles();
+            FileInfo[] fis = di.GetFiles("*.*", SearchOption.AllDirectories);
             if(fis.Length==0)
             {
                 CppUtils.Info(Properties.Resources.NO_FILES);
@@ -97,6 +97,11 @@ namespace RenameAsLang
                     subitem.Name = "new";
                     lvItem.SubItems.Add(subitem);
 
+                    ListViewItem.ListViewSubItem subitemFolder = new ListViewItem.ListViewSubItem();
+                    subitemFolder.Text = fi.DirectoryName;
+                    subitemFolder.Name = "folder";
+                    lvItem.SubItems.Add(subitemFolder);
+
                     lvResult.Items.Add(lvItem);
                 }
             }
@@ -138,8 +143,8 @@ namespace RenameAsLang
                 string olds = item.SubItems["old"].Text;
                 string news = item.SubItems["new"].Text;
 
-                olds = Path.Combine(txtFolder.Text, olds);
-                news = Path.Combine(txtFolder.Text, news);
+                olds = Path.Combine(item.SubItems["folder"].Text, olds);
+                news = Path.Combine(item.SubItems["folder"].Text, news);
 
                 try
                 {

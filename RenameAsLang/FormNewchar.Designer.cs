@@ -37,7 +37,7 @@
             // txtOldchar
             // 
             this.txtOldchar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOldchar.Location = new System.Drawing.Point(54, 12);
+            this.txtOldchar.Location = new System.Drawing.Point(12, 12);
             this.txtOldchar.Name = "txtOldchar";
             this.txtOldchar.ReadOnly = true;
             this.txtOldchar.Size = new System.Drawing.Size(100, 31);
@@ -46,7 +46,7 @@
             // txtNewchar
             // 
             this.txtNewchar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewchar.Location = new System.Drawing.Point(54, 62);
+            this.txtNewchar.Location = new System.Drawing.Point(12, 49);
             this.txtNewchar.Name = "txtNewchar";
             this.txtNewchar.Size = new System.Drawing.Size(100, 31);
             this.txtNewchar.TabIndex = 5;
@@ -54,9 +54,9 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(45, 161);
+            this.btnOK.Location = new System.Drawing.Point(12, 116);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(109, 23);
+            this.btnOK.Size = new System.Drawing.Size(100, 23);
             this.btnOK.TabIndex = 30;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(184, 161);
+            this.btnCancel.Location = new System.Drawing.Point(118, 117);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(141, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 23);
             this.btnCancel.TabIndex = 40;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(385, 202);
+            this.ClientSize = new System.Drawing.Size(229, 152);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtNewchar);
